@@ -5,14 +5,12 @@ import matplotlib.pyplot as plt
 import matplotlib
 import seaborn as sns
 from matplotlib.colors import rgb2hex
-import scvelo as scv
 
 from pipeline_functions import training_data_select
 from pipeline_functions import viz_training_data
 from pipeline_functions import one_hot_encode
 from pipeline_functions import cell_type_classifier
 from pipeline_functions import process_label
-from pipeline_functions import viz_classifier_results
 
 sc.set_figure_params(figsize=(4, 4), fontsize=20)
 oj = sc.read('/Users/katebridges/Downloads/OJ_24_48_woundbeds.h5ad')
